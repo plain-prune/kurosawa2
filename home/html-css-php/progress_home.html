@@ -1,0 +1,696 @@
+﻿<script>
+	var max = 0;
+	var sum = 0, sum2 = 0, sum3 = 0, sum4 = 0, sum5 = 0, sum6 = 0;
+	var max = 0;
+	var pass = [60];
+
+	var data = [59];
+	data[0] = sessionStorage.getItem("Answer1-1");
+	data[1] = sessionStorage.getItem("Answer1-2");
+	data[2] = sessionStorage.getItem("Answer1-3");
+	data[3] = sessionStorage.getItem("Answer1-4");
+	data[4] = sessionStorage.getItem("Answer1-5");
+	data[5] = sessionStorage.getItem("Answer1-6");
+	data[6] = sessionStorage.getItem("Answer1-7");
+	data[7] = sessionStorage.getItem("Answer1-8");
+	data[8] = sessionStorage.getItem("Answer1-9");
+	data[9] = sessionStorage.getItem("Answer1-10");
+	//2ページ目
+	data[10] = sessionStorage.getItem("Answer2-1");
+	data[11] = sessionStorage.getItem("Answer2-2");
+	data[12] = sessionStorage.getItem("Answer2-3");
+	data[13] = sessionStorage.getItem("Answer2-4");
+	data[14] = sessionStorage.getItem("Answer2-5");
+	data[15] = sessionStorage.getItem("Answer2-6");
+	data[16] = sessionStorage.getItem("Answer2-7");
+	data[17] = sessionStorage.getItem("Answer2-8");
+	data[18] = sessionStorage.getItem("Answer2-9");
+	data[19] = sessionStorage.getItem("Answer2-10");
+	//3ページ目
+	data[20] = sessionStorage.getItem("Answer3-1");
+	data[21] = sessionStorage.getItem("Answer3-2");
+	data[22] = sessionStorage.getItem("Answer3-3");
+	data[23] = sessionStorage.getItem("Answer3-4");
+	data[24] = sessionStorage.getItem("Answer3-5");
+	data[25] = sessionStorage.getItem("Answer3-6");
+	data[26] = sessionStorage.getItem("Answer3-7");
+	data[27] = sessionStorage.getItem("Answer3-8");
+	data[28] = sessionStorage.getItem("Answer3-9");
+	data[29] = sessionStorage.getItem("Answer3-10");
+	//4ページ目
+	data[30] = sessionStorage.getItem("Answer4-1");
+	data[31] = sessionStorage.getItem("Answer4-2");
+	data[32] = sessionStorage.getItem("Answer4-3");
+	data[33] = sessionStorage.getItem("Answer4-4");
+	data[34] = sessionStorage.getItem("Answer4-5");
+	data[35] = sessionStorage.getItem("Answer4-6");
+	data[36] = sessionStorage.getItem("Answer4-7");
+	data[37] = sessionStorage.getItem("Answer4-8");
+	data[38] = sessionStorage.getItem("Answer4-9");
+	data[39] = sessionStorage.getItem("Answer4-10");
+	//5ページ目
+	data[40] = sessionStorage.getItem("Answer5-1");
+	data[41] = sessionStorage.getItem("Answer5-2");
+	data[42] = sessionStorage.getItem("Answer5-3");
+	data[43] = sessionStorage.getItem("Answer5-4");
+	data[44] = sessionStorage.getItem("Answer5-5");
+	data[45] = sessionStorage.getItem("Answer5-6");
+	data[46] = sessionStorage.getItem("Answer5-7");
+	data[47] = sessionStorage.getItem("Answer5-8");
+	data[48] = sessionStorage.getItem("Answer5-9");
+	data[49] = sessionStorage.getItem("Answer5-10");
+	//6ページ目
+	data[50] = sessionStorage.getItem("Answer6-1");
+	data[51] = sessionStorage.getItem("Answer6-2");
+	data[52] = sessionStorage.getItem("Answer6-3");
+	data[53] = sessionStorage.getItem("Answer6-4");
+	data[54] = sessionStorage.getItem("Answer6-5");
+	data[55] = sessionStorage.getItem("Answer6-6");
+	data[56] = sessionStorage.getItem("Answer6-7");
+	data[57] = sessionStorage.getItem("Answer6-8");
+	data[58] = sessionStorage.getItem("Answer6-9");
+	data[59] = sessionStorage.getItem("Answer6-10");
+
+	var text = [59];
+	//1ページ目
+	text[0] = sessionStorage.getItem("comment");
+	text[1] = sessionStorage.getItem("comment2");
+	text[2] = sessionStorage.getItem("comment3");
+	text[3] = sessionStorage.getItem("comment4");
+	text[4] = sessionStorage.getItem("comment5");
+	text[5] = sessionStorage.getItem("comment6");
+	text[6] = sessionStorage.getItem("comment7");
+	text[7] = sessionStorage.getItem("comment8");
+	text[8] = sessionStorage.getItem("comment9");
+	text[9] = sessionStorage.getItem("comment10");
+	//2ページ目
+	text[10] = sessionStorage.getItem("comment11");
+	text[11] = sessionStorage.getItem("comment12");
+	text[12] = sessionStorage.getItem("comment13");
+	text[13] = sessionStorage.getItem("comment14");
+	text[14] = sessionStorage.getItem("comment15");
+	text[15] = sessionStorage.getItem("comment16");
+	text[16] = sessionStorage.getItem("comment17");
+	text[17] = sessionStorage.getItem("comment18");
+	text[18] = sessionStorage.getItem("comment19");
+	text[19] = sessionStorage.getItem("comment20");
+	//3ページ目
+	text[20] = sessionStorage.getItem("comment21");
+	text[21] = sessionStorage.getItem("comment22");
+	text[22] = sessionStorage.getItem("comment23");
+	text[23] = sessionStorage.getItem("comment24");
+	text[24] = sessionStorage.getItem("comment25");
+	text[25] = sessionStorage.getItem("comment26");
+	text[26] = sessionStorage.getItem("comment27");
+	text[27] = sessionStorage.getItem("comment28");
+	text[28] = sessionStorage.getItem("comment29");
+	text[29] = sessionStorage.getItem("comment30");
+	//4ページ目
+	text[30] = sessionStorage.getItem("comment31");
+	text[31] = sessionStorage.getItem("comment32");
+	text[32] = sessionStorage.getItem("comment33");
+	text[33] = sessionStorage.getItem("comment34");
+	text[34] = sessionStorage.getItem("comment35");
+	text[35] = sessionStorage.getItem("comment36");
+	text[36] = sessionStorage.getItem("comment37");
+	text[37] = sessionStorage.getItem("comment38");
+	text[38] = sessionStorage.getItem("comment39");
+	text[39] = sessionStorage.getItem("comment40");
+	//5ページ目
+	text[40] = sessionStorage.getItem("comment41");
+	text[41] = sessionStorage.getItem("comment42");
+	text[42] = sessionStorage.getItem("comment43");
+	text[43] = sessionStorage.getItem("comment44");
+	text[44] = sessionStorage.getItem("comment45");
+	text[45] = sessionStorage.getItem("comment46");
+	text[46] = sessionStorage.getItem("comment47");
+	text[47] = sessionStorage.getItem("comment48");
+	text[48] = sessionStorage.getItem("comment49");
+	text[49] = sessionStorage.getItem("comment50");
+	//6ページ目
+	text[50] = sessionStorage.getItem("comment51");
+	text[51] = sessionStorage.getItem("comment52");
+	text[52] = sessionStorage.getItem("comment53");
+	text[53] = sessionStorage.getItem("comment54");
+	text[54] = sessionStorage.getItem("comment55");
+	text[55] = sessionStorage.getItem("comment56");
+	text[56] = sessionStorage.getItem("comment57");
+	text[57] = sessionStorage.getItem("comment58");
+	text[58] = sessionStorage.getItem("comment59");
+	text[59] = sessionStorage.getItem("comment60");
+
+	for (var i = 0; i < 60; i++) {
+		if (i <= 9) {
+			sum += parseInt(data[i]);
+		}
+
+		else if (i <= 19) {
+			sum2 += parseInt(data[i]);
+		}
+
+		else if (i <= 29) {
+			sum3 += parseInt(data[i]);
+		}
+
+		else if (i <= 39) {
+			sum4 += parseInt(data[i]);
+		}
+
+		else if (i <= 49) {
+			sum5 += parseInt(data[i]);
+		}
+
+		else {
+			sum6 += parseInt(data[i]);
+		}
+
+
+	}
+
+	for (var i = 0; i < 7; i++) {
+		if (max < sum) {
+			max = sum;
+		}
+		if (max < sum2) {
+			max = sum2;
+		}
+		if (max < sum3) {
+			max = sum3;
+		}
+		if (max < sum4) {
+			max = sum4;
+		}
+		if (max < sum5) {
+			max = sum5;
+		}
+		if (max < sum6) {
+			max = sum6;
+		}
+	}
+
+	var AP = 0;
+	if ((sum == sum2 && sum3 == sum4) && sum5 == sum6) {
+		AP = 1;
+	}
+
+	function saveContent() {
+		if (AP == 1) {
+			location.assign("result7.php");
+		} else if (sum == max) {
+			location.assign("result.php");
+		} else if (sum2 == max) {
+			location.assign("result2.php");
+		} else if (sum3 == max) {
+			location.assign("result3.php");
+		} else if (sum4 == max) {
+			location.assign("result4.php");
+		} else if (sum5 == max) {
+			location.assign("result5.php");
+		} else if (sum6 == max) {
+			location.assign("result6.php");
+		}
+	}
+</script>
+
+<script src="jQuery.js"></script>
+<script>
+	for (i = 1; i < 61; i++) {
+		var a = sessionStorage.getItem("snk" + i)
+		if (a == null) {
+			sessionStorage.setItem("snk" + i, 0);
+		}
+	}
+	var snk = [60];
+	snk[1] = sessionStorage.getItem("snk1");
+	snk[2] = sessionStorage.getItem("snk2");
+	snk[3] = sessionStorage.getItem("snk3");
+	snk[4] = sessionStorage.getItem("snk4");
+	snk[5] = sessionStorage.getItem("snk5");
+	snk[6] = sessionStorage.getItem("snk6");
+	snk[7] = sessionStorage.getItem("snk7");
+	snk[8] = sessionStorage.getItem("snk8");
+	snk[9] = sessionStorage.getItem("snk9");
+	snk[10] = sessionStorage.getItem("snk10");
+	snk[11] = sessionStorage.getItem("snk11");
+	snk[12] = sessionStorage.getItem("snk12");
+	snk[13] = sessionStorage.getItem("snk13");
+	snk[14] = sessionStorage.getItem("snk14");
+	snk[15] = sessionStorage.getItem("snk15");
+	snk[16] = sessionStorage.getItem("snk16");
+	snk[17] = sessionStorage.getItem("snk17");
+	snk[18] = sessionStorage.getItem("snk18");
+	snk[19] = sessionStorage.getItem("snk19");
+	snk[20] = sessionStorage.getItem("snk20");
+	snk[21] = sessionStorage.getItem("snk21");
+	snk[22] = sessionStorage.getItem("snk22");
+	snk[23] = sessionStorage.getItem("snk23");
+	snk[24] = sessionStorage.getItem("snk24");
+	snk[25] = sessionStorage.getItem("snk25");
+	snk[26] = sessionStorage.getItem("snk26");
+	snk[27] = sessionStorage.getItem("snk27");
+	snk[28] = sessionStorage.getItem("snk28");
+	snk[29] = sessionStorage.getItem("snk29");
+	snk[30] = sessionStorage.getItem("snk30");
+	snk[31] = sessionStorage.getItem("snk31");
+	snk[32] = sessionStorage.getItem("snk32");
+	snk[33] = sessionStorage.getItem("snk33");
+	snk[34] = sessionStorage.getItem("snk34");
+	snk[35] = sessionStorage.getItem("snk35");
+	snk[36] = sessionStorage.getItem("snk36");
+	snk[37] = sessionStorage.getItem("snk37");
+	snk[38] = sessionStorage.getItem("snk38");
+	snk[39] = sessionStorage.getItem("snk39");
+	snk[40] = sessionStorage.getItem("snk40");
+	snk[41] = sessionStorage.getItem("snk41");
+	snk[42] = sessionStorage.getItem("snk42");
+	snk[43] = sessionStorage.getItem("snk43");
+	snk[44] = sessionStorage.getItem("snk44");
+	snk[45] = sessionStorage.getItem("snk45");
+	snk[46] = sessionStorage.getItem("snk46");
+	snk[47] = sessionStorage.getItem("snk47");
+	snk[48] = sessionStorage.getItem("snk48");
+	snk[49] = sessionStorage.getItem("snk49");
+	snk[50] = sessionStorage.getItem("snk50");
+	snk[51] = sessionStorage.getItem("snk51");
+	snk[52] = sessionStorage.getItem("snk52");
+	snk[53] = sessionStorage.getItem("snk53");
+	snk[54] = sessionStorage.getItem("snk54");
+	snk[55] = sessionStorage.getItem("snk55");
+	snk[56] = sessionStorage.getItem("snk56");
+	snk[57] = sessionStorage.getItem("snk57");
+	snk[58] = sessionStorage.getItem("snk58");
+	snk[59] = sessionStorage.getItem("snk59");
+	snk[60] = sessionStorage.getItem("snk60");
+
+	var p1 = 0;
+
+	for (i = 0; i < 10; i++) {
+		if (data[i] == 1 || data[i] == 2 || data[i] == 3 || data[i] == 4 || data[i] == 5 || data[i] == 6) {
+			p1++;
+		}
+	}
+
+	var p2 = 0;
+
+	for (i = 10; i < 20; i++) {
+
+		if (data[i] == 1 || data[i] == 2 || data[i] == 3 || data[i] == 4 || data[i] == 5 || data[i] == 6) {
+			p2++;
+		}
+	}
+
+	var p3 = 0;
+
+	for (i = 20; i < 30; i++) {
+
+		if (data[i] == 1 || data[i] == 2 || data[i] == 3 || data[i] == 4 || data[i] == 5 || data[i] == 6) {
+			p3++;
+		}
+	}
+	var p4 = 0;
+
+	for (i = 30; i < 40; i++) {
+
+		if (data[i] == 1 || data[i] == 2 || data[i] == 3 || data[i] == 4 || data[i] == 5 || data[i] == 6) {
+			p4++;
+		}
+	}
+	var p5 = 0;
+
+	for (i = 40; i < 50; i++) {
+
+		if (data[i] == 1 || data[i] == 2 || data[i] == 3 || data[i] == 4 || data[i] == 5 || data[i] == 6) {
+			p5++;
+		}
+	}
+	var p6 = 0;
+
+	for (i = 50; i < 60; i++) {
+
+		if (data[i] == 1 || data[i] == 2 || data[i] == 3 || data[i] == 4 || data[i] == 5 || data[i] == 6) {
+			p6++;
+		}
+	}
+
+
+	var pa = 0;
+	for (i = 0; i < 60; i++) {
+		if (data[i] == 1 || data[i] == 2 || data[i] == 3 || data[i] == 4 || data[i] == 5 || data[i] == 6) {
+			pa++;
+		}
+	}
+
+	$(function () {
+		$('#progress').attr("value", pa);
+	});
+	$(function () {
+		$('#progress1').attr("value", p1);
+	});
+	$(function () {
+		$('#progress2').attr("value", p2);
+	});
+	$(function () {
+		$('#progress3').attr("value", p3);
+	});
+	$(function () {
+		$('#progress4').attr("value", p4);
+	});
+	$(function () {
+		$('#progress5').attr("value", p5);
+	});
+	$(function () {
+		$('#progress6').attr("value", p6);
+	});
+
+	$(function () {
+		$('#next').attr('disabled', 'disabled');
+
+		$(function () {
+			if (pa == 60) {
+				$('#next').removeAttr('disabled');
+			} else {
+
+				$('#next').attr('disabled', 'disabled');
+			}
+		});
+	});
+
+
+</script>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+<head>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.14.2/xlsx.full.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.min.js"></script>
+	<link rel="stylesheet" href="css_file/prog_layout.css">
+
+	<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:xd_Signature msdt:dt="string"></mso:xd_Signature>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">KUMENO FUMIHIRO</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">1372300.00000000</mso:Order>
+<mso:ComplianceAssetId msdt:dt="string"></mso:ComplianceAssetId>
+<mso:TemplateUrl msdt:dt="string"></mso:TemplateUrl>
+<mso:xd_ProgID msdt:dt="string"></mso:xd_ProgID>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">KUMENO FUMIHIRO</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:TriggerFlowInfo msdt:dt="string"></mso:TriggerFlowInfo>
+<mso:ContentTypeId msdt:dt="string">0x0101001DCA70F4AAFA134197477F43C314D8C0</mso:ContentTypeId>
+<mso:_SourceUrl msdt:dt="string"></mso:_SourceUrl>
+<mso:_SharedFileIndex msdt:dt="string"></mso:_SharedFileIndex>
+<mso:MediaLengthInSeconds msdt:dt="string"></mso:MediaLengthInSeconds>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+	<title>自分メータ</title>
+</head>
+
+<body>
+
+	<div id="center">
+		<input type="button" value=""
+			onClick="sessionStorage.setItem('color', 0), document.getElementById('t1').className='white',document.getElementById('t2').className='white',document.getElementById('t3').className='white',document.getElementById('t4').className='white',document.getElementById('t5').className='white',document.getElementById('t6').className='white',document.getElementById('t7').className='white',document.getElementById('idh1').className='h1white'
+			,document.getElementById('t11').className='td_white',document.getElementById('t12').className='td_white',document.getElementById('t13').className='td_white',document.getElementById('t14').className='td_white',document.getElementById('t15').className='td_white',document.getElementById('t16').className='td_white',document.getElementById('t17').className='td_white' 
+			,document.getElementById('t21').className='td_white',document.getElementById('t22').className='td_white',document.getElementById('t23').className='td_white',document.getElementById('t24').className='td_white',document.getElementById('t25').className='td_white',document.getElementById('t26').className='td_white',document.getElementById('t27').className='td_white'"style="background-color:#ffffff;" class="a">
+		<input type="button" value=""
+			onClick="sessionStorage.setItem('color', 1), document.getElementById('t1').className='black',document.getElementById('t2').className='black',document.getElementById('t3').className='black',document.getElementById('t4').className='black',document.getElementById('t5').className='black',document.getElementById('t6').className='black',document.getElementById('t7').className='black',document.getElementById('idh1').className='h1black'
+			,document.getElementById('t11').className='td_black',document.getElementById('t12').className='td_black',document.getElementById('t13').className='td_black',document.getElementById('t14').className='td_black',document.getElementById('t15').className='td_black',document.getElementById('t16').className='td_black',document.getElementById('t17').className='td_black'
+			,document.getElementById('t21').className='td_black',document.getElementById('t22').className='td_black',document.getElementById('t23').className='td_black',document.getElementById('t24').className='td_black',document.getElementById('t25').className='td_black',document.getElementById('t26').className='td_black',document.getElementById('t27').className='td_black'"style="background-color:#696969;" class="a">
+		<input type="button" value=""
+			onClick="sessionStorage.setItem('color', 2), document.getElementById('t1').className='red',document.getElementById('t2').className='red',document.getElementById('t3').className='red',document.getElementById('t4').className='red',document.getElementById('t5').className='red',document.getElementById('t6').className='red',document.getElementById('t7').className='red',document.getElementById('idh1').className='h1red'
+			,document.getElementById('t11').className='td_red',document.getElementById('t12').className='td_red',document.getElementById('t13').className='td_red',document.getElementById('t14').className='td_red',document.getElementById('t15').className='td_red',document.getElementById('t16').className='td_red',document.getElementById('t17').className='td_red'
+			,document.getElementById('t21').className='td_red',document.getElementById('t22').className='td_red',document.getElementById('t23').className='td_red',document.getElementById('t24').className='td_red',document.getElementById('t25').className='td_red',document.getElementById('t26').className='td_red',document.getElementById('t27').className='td_red'"style="background-color:#ff6347;" class="a">
+		<input type="button" value=""
+			onClick="sessionStorage.setItem('color', 3), document.getElementById('t1').className='green',document.getElementById('t2').className='green',document.getElementById('t3').className='green',document.getElementById('t4').className='green',document.getElementById('t5').className='green',document.getElementById('t6').className='green',document.getElementById('t7').className='green',document.getElementById('idh1').className='h1green'
+			,document.getElementById('t11').className='td_green',document.getElementById('t12').className='td_green',document.getElementById('t13').className='td_green',document.getElementById('t14').className='td_green',document.getElementById('t15').className='td_green',document.getElementById('t16').className='td_green',document.getElementById('t17').className='td_green'
+			,document.getElementById('t21').className='td_green',document.getElementById('t22').className='td_green',document.getElementById('t23').className='td_green',document.getElementById('t24').className='td_green',document.getElementById('t25').className='td_green',document.getElementById('t26').className='td_green',document.getElementById('t27').className='td_green'"style="background-color:#32cd32;" class="a">
+		<input type="button" value=""
+			onClick="sessionStorage.setItem('color', 4), document.getElementById('t1').className='blue',document.getElementById('t2').className='blue',document.getElementById('t3').className='blue',document.getElementById('t4').className='blue',document.getElementById('t5').className='blue',document.getElementById('t6').className='blue',document.getElementById('t7').className='blue',document.getElementById('idh1').className='h1blue'
+			,document.getElementById('t11').className='td_blue',document.getElementById('t12').className='td_blue',document.getElementById('t13').className='td_blue',document.getElementById('t14').className='td_blue',document.getElementById('t15').className='td_blue',document.getElementById('t16').className='td_blue',document.getElementById('t17').className='td_blue'
+			,document.getElementById('t21').className='td_blue',document.getElementById('t22').className='td_blue',document.getElementById('t23').className='td_blue',document.getElementById('t24').className='td_blue',document.getElementById('t25').className='td_blue',document.getElementById('t26').className='td_blue',document.getElementById('t27').className='td_blue'"style="background-color:#1e90ff;" class="a">
+		<!--途中保存を押すとデータを保存するためのPHPへ、データとともに遷移します。参考：https://www.fixes.pub/program/309596.html-->
+
+		<h1 id=idh1><ruby>進行度確認<rt>しんこうどかくにん</rt></ruby></h1>
+		<table>
+			<tr>
+				<th id="t1">こころ</th>
+				<td id="t11">
+					<label for="file"><ruby>進行度<rt>しんこうど</rt></ruby>:</label>
+					<progress id="progress1" max="10" value=""></progress>
+				</td>
+				<td id="t21"><input type="button" value="こころ" onclick=location.assign("1-heart.php")
+						class="btn-gradient-3d-simple2"></td>
+			</tr>
+
+			<tr>
+				<th id="t2">しゃかい</th>
+				<td id="t12">
+					<label for="file"><ruby>進行度<rt>しんこうど</rt></ruby>:</label>
+					<progress id="progress2" max="10" value=""></progress>
+				</td>
+				<td id="t22"><input type="button" value="しゃかい" onclick=location.assign("2-society.php")
+						class="btn-gradient-3d-simple2"></td>
+			</tr>
+
+			<tr>
+				<th id="t3">がくしゅう</th>
+				<td id="t13">
+					<label for="file"><ruby>進行度<rt>しんこうど</rt></ruby>:</label>
+					<progress id="progress3" max="10" value=""></progress>
+				</td>
+				<td id="t23"><input type="button" value="がくしゅう" onclick=location.assign("3-study.php")
+						class="btn-gradient-3d-simple2"></td>
+			</tr>
+
+			<tr>
+				<th id="t4">からだ</th>
+				<td id="t14">
+					<label for="file"><ruby>進行度<rt>しんこうど</rt></ruby>:</label>
+					<progress id="progress4" max="10" value=""></progress>
+				</td>
+				<td id="t24"><input type="button" value="からだ" onclick=location.assign("4-body.php")
+						class="btn-gradient-3d-simple2"></td>
+			</tr>
+
+			<tr>
+				<th id="t5">せいかつ</th>
+				<td id="t15">
+					<label for="file"><ruby>進行度<rt>しんこうど</rt></ruby>:</label>
+					<progress id="progress5" max="10" value=""></progress>
+				</td>
+				<td id="t25"><input type="button" value="せいかつ" onclick=location.assign("5-live.php")
+						class="btn-gradient-3d-simple2"></td>
+			</tr>
+
+			<tr>
+				<th id="t6">みのまわり</th>
+				<td id="t16">
+					<label for="file"><ruby>進行度<rt>しんこうど</rt></ruby>:</label>
+					<progress id="progress6" max="10" value=""></progress>
+				</td>
+				<td id="t26"><input type="button" value="みのまわり" onclick=location.assign("6-around.php")
+						class="btn-gradient-3d-simple2"></td>
+			</tr>
+
+			<tr>
+				<th id="t7">全体の進行度</th>
+				<td id="t17">
+					<label for="file"><ruby>進行度<rt>しんこうど</rt></ruby>:</label>
+					<progress id="progress" max="60" value=""></progress>
+				</td>
+				<td id="t27">
+					<form method="post" id="saveform" action="save_test_end.php">
+						<input type="hidden" id="saves" name="saves">
+						<button class="btn-gradient-3d-simple2">結果へ</button>
+					</form>
+					<script>
+						window.onload = function () {
+							var form = document.getElementById('saveform');
+							form.addEventListener('submit', function () {
+								var saveField = document.getElementById('saves');
+								var saves = data;
+								saves = data.concat(text);
+								saveField.value = JSON.stringify(saves);
+							});
+						}
+					</script>
+				</td>
+		</table>
+		<input type="button" value="ホームに戻る" onclick=location.assign("../home_teacher.php")
+			class="btn-gradient-3d-simple2">
+		<script language="javascript" type="text/javascript">
+			// 出力するオブジェクト(Array)
+			var array1 =
+				[
+					["こころ", "こころ点数", "こころコメント", "しゃかい", "しゃかい点数", "しゃかいコメント", "がくしゅう", "がくしゅう点数", "がくしゅうコメント", "からだ", "からだ点数", "コメント", "せいかつ", "せいかつ点数", "せいかつコメント", "身のまわり", "身のまわり点数", "身のまわりコメント"],
+					["第1問", data[0], text[0], "第1問", data[10], text[10], "第1問", data[20], text[20], "第1問", data[30], text[30], "第1問", data[40], text[40], "第1問", data[50], text[50]],
+					["第2問", data[1], text[1], "第2問", data[11], text[11], "第2問", data[21], text[21], "第2問", data[31], text[31], "第2問", data[41], text[41], "第2問", data[51], text[51]],
+					["第3問", data[2], text[2], "第3問", data[12], text[12], "第3問", data[22], text[22], "第3問", data[32], text[32], "第3問", data[42], text[42], "第3問", data[52], text[52]],
+					["第4問", data[3], text[3], "第4問", data[13], text[13], "第4問", data[23], text[23], "第4問", data[33], text[33], "第4問", data[43], text[43], "第4問", data[53], text[53]],
+					["第5問", data[4], text[4], "第5問", data[14], text[14], "第5問", data[24], text[24], "第5問", data[34], text[34], "第5問", data[44], text[44], "第5問", data[54], text[54]],
+					["第6問", data[5], text[5], "第6問", data[15], text[15], "第6問", data[25], text[25], "第6問", data[35], text[35], "第6問", data[45], text[45], "第6問", data[55], text[55]],
+					["第7問", data[6], text[6], "第7問", data[16], text[16], "第7問", data[26], text[26], "第7問", data[36], text[36], "第7問", data[46], text[46], "第7問", data[56], text[56]],
+					["第8問", data[7], text[7], "第8問", data[17], text[17], "第8問", data[27], text[27], "第8問", data[37], text[37], "第8問", data[47], text[47], "第8問", data[57], text[57]],
+					["第9問", data[8], text[8], "第9問", data[18], text[18], "第9問", data[28], text[28], "第9問", data[38], text[38], "第9問", data[48], text[48], "第9問", data[58], text[58]],
+					["第10問", data[9], text[9], "第10問", data[19], text[19], "第10問", data[29], text[29], "第10問", data[39], text[39], "第10問", data[49], text[49], "第10問", data[59], text[59]],
+					["合計", sum, "", "", sum2, "", "", sum3, "", "", sum4, "", "", sum5, "", "", sum6],
+				];
+
+			// SheetをWorkbookに追加する
+			// 参照：https://github.com/SheetJS/js-xlsx/issues/163
+			function sheet_to_workbook(sheet/*:Worksheet*/, opts)/*:Workbook*/ {
+				var n = opts && opts.sheet ? opts.sheet : "Sheet1";
+				var sheets = {}; sheets[n] = sheet;
+				return { SheetNames: [n], Sheets: sheets };
+			}
+
+			// ArrayをWorkbookに変換する
+			// 参照：https://github.com/SheetJS/js-xlsx/issues/163
+			function aoa_to_workbook(data/*:Array<Array <any> >*/, opts)/*:Workbook*/ {
+				return sheet_to_workbook(XLSX.utils.aoa_to_sheet(data, opts), opts);
+			}
+
+			// stringをArrayBufferに変換する
+			// 参照：https://stackoverflow.com/questions/34993292/how-to-save-xlsx-data-to-file-as-a-blob
+			function s2ab(s) {
+				var buf = new ArrayBuffer(s.length);
+				var view = new Uint8Array(buf);
+				for (var i = 0; i != s.length; ++i) view[i] = s.charCodeAt(i) & 0xFF;
+				return buf;
+			}
+
+			var color = sessionStorage.getItem("color");
+			if (color == 0) {
+				document.getElementById('t1').className = 'white';
+				document.getElementById('t2').className = 'white';
+				document.getElementById('t3').className = 'white';
+				document.getElementById('t4').className = 'white';
+				document.getElementById('t5').className = 'white';
+				document.getElementById('t6').className = 'white';
+				document.getElementById('t7').className = 'white';
+				document.getElementById('t11').className = 'td_white';
+				document.getElementById('t12').className = 'td_white';
+				document.getElementById('t13').className = 'td_white';
+				document.getElementById('t14').className = 'td_white';
+				document.getElementById('t15').className = 'td_white';
+				document.getElementById('t16').className = 'td_white';
+				document.getElementById('t17').className = 'td_white';
+				document.getElementById('t21').className = 'td_white';
+				document.getElementById('t22').className = 'td_white';
+				document.getElementById('t23').className = 'td_white';
+				document.getElementById('t24').className = 'td_white';
+				document.getElementById('t25').className = 'td_white';
+				document.getElementById('t26').className = 'td_white';
+				document.getElementById('t27').className = 'td_white';
+				document.getElementById('idh1').className = 'h1white';
+			} else if (color == 1) {
+				document.getElementById('t1').className = 'black';
+				document.getElementById('t2').className = 'black';
+				document.getElementById('t3').className = 'black';
+				document.getElementById('t4').className = 'black';
+				document.getElementById('t5').className = 'black';
+				document.getElementById('t6').className = 'black';
+				document.getElementById('t7').className = 'black';
+				document.getElementById('t11').className = 'td_black';
+				document.getElementById('t12').className = 'td_black';
+				document.getElementById('t13').className = 'td_black';
+				document.getElementById('t14').className = 'td_black';
+				document.getElementById('t15').className = 'td_black';
+				document.getElementById('t16').className = 'td_black';
+				document.getElementById('t17').className = 'td_black';
+				document.getElementById('t21').className = 'td_black';
+				document.getElementById('t22').className = 'td_black';
+				document.getElementById('t23').className = 'td_black';
+				document.getElementById('t24').className = 'td_black';
+				document.getElementById('t25').className = 'td_black';
+				document.getElementById('t26').className = 'td_black';
+				document.getElementById('t27').className = 'td_black';		
+				document.getElementById('idh1').className = 'h1black';
+			} else if (color == 2) {
+				document.getElementById('t1').className = 'red';
+				document.getElementById('t2').className = 'red';
+				document.getElementById('t3').className = 'red';
+				document.getElementById('t4').className = 'red';
+				document.getElementById('t5').className = 'red';
+				document.getElementById('t6').className = 'red';
+				document.getElementById('t7').className = 'red';
+				document.getElementById('t11').className = 'td_red';
+				document.getElementById('t12').className = 'td_red';
+				document.getElementById('t13').className = 'td_red';
+				document.getElementById('t14').className = 'td_red';
+				document.getElementById('t15').className = 'td_red';
+				document.getElementById('t16').className = 'td_red';
+				document.getElementById('t17').className = 'td_red';	
+				document.getElementById('t21').className = 'td_red';
+				document.getElementById('t22').className = 'td_red';
+				document.getElementById('t23').className = 'td_red';
+				document.getElementById('t24').className = 'td_red';
+				document.getElementById('t25').className = 'td_red';
+				document.getElementById('t26').className = 'td_red';
+				document.getElementById('t27').className = 'td_red';		
+				document.getElementById('idh1').className = 'h1red';
+			} else if (color == 3) {
+				document.getElementById('t1').className = 'green';
+				document.getElementById('t2').className = 'green';
+				document.getElementById('t3').className = 'green';
+				document.getElementById('t4').className = 'green';
+				document.getElementById('t5').className = 'green';
+				document.getElementById('t6').className = 'green';
+				document.getElementById('t7').className = 'green';
+				document.getElementById('t11').className = 'td_grenn';
+				document.getElementById('t12').className = 'td_green';
+				document.getElementById('t13').className = 'td_green';
+				document.getElementById('t14').className = 'td_green';
+				document.getElementById('t15').className = 'td_green';
+				document.getElementById('t16').className = 'td_green';
+				document.getElementById('t17').className = 'td_green';		
+				document.getElementById('t21').className = 'td_grenn';
+				document.getElementById('t22').className = 'td_green';
+				document.getElementById('t23').className = 'td_green';
+				document.getElementById('t24').className = 'td_green';
+				document.getElementById('t25').className = 'td_green';
+				document.getElementById('t26').className = 'td_green';
+				document.getElementById('t27').className = 'td_green';	
+				document.getElementById('idh1').className = 'h1green';
+			} else if (color == 4) {
+				document.getElementById('t1').className = 'blue';
+				document.getElementById('t2').className = 'blue';
+				document.getElementById('t3').className = 'blue';
+				document.getElementById('t4').className = 'blue';
+				document.getElementById('t5').className = 'blue';
+				document.getElementById('t6').className = 'blue';
+				document.getElementById('t7').className = 'blue';
+				document.getElementById('idh1').className = 'h1blue';
+				document.getElementById('t11').className = 'td_blue';
+				document.getElementById('t12').className = 'td_blue';
+				document.getElementById('t13').className = 'td_blue';
+				document.getElementById('t14').className = 'td_blue';
+				document.getElementById('t15').className = 'td_blue';
+				document.getElementById('t16').className = 'td_blue';
+				document.getElementById('t17').className = 'td_blue';	
+				document.getElementById('t21').className = 'td_blue';
+				document.getElementById('t22').className = 'td_blue';
+				document.getElementById('t23').className = 'td_blue';
+				document.getElementById('t24').className = 'td_blue';
+				document.getElementById('t25').className = 'td_blue';
+				document.getElementById('t26').className = 'td_blue';
+				document.getElementById('t27').className = 'td_blue';						
+			}
+
+			for (var i = 0; i <= 6; i++) {
+				for (var j = 0; j <= 10; j++) {
+					if (sessionStorage.getItem("Answer" + i + "-" + j) == null) {
+						sessionStorage.setItem("Answer" + i + "-" + j, 0);
+					}
+				}
+			}
+
+			for (var k = 0; k <= 60; k++) {
+				if (sessionStorage.getItem("pass" + k) == null) {
+					sessionStorage.setItem("pass" + k, 0);
+				}
+			}
+		</script>
+</body>
+<div>
+
+</html>

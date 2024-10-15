@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>自分メータ</title>
+        <link rel="stylesheet" href="css_file/design2.css">
+        <link href="css_file/progression.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+        <div id="center">
+                <h1>その<ruby>他<rt>た</rt>の</ruby><ruby>登録<rt>とうろく</rt></ruby></h1>
+
+                <form method="post" name="form1" action="postscript_check.php">
+
+                        <div class="cp_ipselect">
+                                <select data-progression="" class="cp_sl06" required id="grade" data-helper="学年を選択してくさだい" name="grade" value="">
+                                        <option value="" hidden disabled selected></option>
+                                        <option value="小学校1年生">小学校1年生</option>
+                                        <option value="小学校2年生">小学校2年生</option>
+                                        <option value="小学校3年生">小学校3年生</option>
+                                        <option value="小学校4年生">小学校4年生</option>
+                                        <option value="小学校5年生">小学校5年生</option>
+                                        <option value="小学校6年生">小学校6年生</option>
+                                        <option value="中学校1年生">中学校1年生</option>
+                                        <option value="中学校2年生">中学校2年生</option>
+                                        <option value="中学校3年生">中学校3年生</option>
+                                </select>
+                                <span class="cp_sl06_highlight"></span>
+                                <span class="cp_sl06_selectbar"></span>
+                                <label class="cp_sl06_selectlabel">担当する生徒の学年</label>
+						</div>
+
+						<div>
+   								<input type="checkbox" name="disability[]" value="ADHD">
+										<label>ADHD　　　　</label>
+  								<input type="checkbox" name="disability[]" value="ASD">
+										<label>ASD　　　　</label>
+  								<input type="checkbox" name="disability[]" value="適応障害">
+										<label>適応障害</label><br>
+  								<input type="checkbox" name="disability[]" value="反応性愛着障害">
+										<label>反応性愛着障害</label>
+  								<input type="checkbox" name="disability[]" value="強迫性障害">
+										<label>強迫性障害　</label>
+  								<input type="checkbox" name="disability[]" value="気分変調症">
+										<label>気分変調症</label><br>
+  								<input type="checkbox" name="disability[]" value="抑うつ状態">
+										<label>抑うつ状態　　</label>
+  								<input type="checkbox" name="disability[]" value="統合失調症">
+										<label>統合失調症　</label>
+  								<input type="checkbox" name="disability[]" value="その他">
+										<label>その他</label>
+ 						</div>
+
+           				<div class="cp_ipselect">
+           	                    <select data-progression="" class="cp_sl06" required id="gender" data-helper="性別を選択してください" name="gender" value="">
+                                        <option value="" hidden disabled selected></option>
+                                        <option value="男">男の子</option>
+                                        <option value="女">女の子</option>
+                                        <option value="その他">そのほか</option>
+                                </select>
+                                <span class="cp_sl06_highlight"></span>
+                                <span class="cp_sl06_selectbar"></span>
+                                <label class="cp_sl06_selectlabel">性別</label>
+                        </div>
+			
+						<div class="cp_iptxt">
+                                <input class="ef" data-progression="" data-helper="自由記入欄" type="text" id="comment" name="comment" value="" placeholder="">
+                                <label>自由記入欄：</label>
+                                <span class="focus_line"></span>
+			
+                       			<label>
+                         		       <input type="hidden" id="teach" name="teach" value="no">
+                       			</label>
+                      			<input type="button" onclick=location.assign("../home_teacher.php") value="戻る"class="btn-gradient-3d-simple2">
+                        		<input type="submit" value="ＯＫ"  class="btn-gradient-3d-simple">
+                </form>
+
+</body>
+
+</html>

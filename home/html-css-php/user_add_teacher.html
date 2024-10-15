@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>自分メータ</title>
+        <link rel="stylesheet" href="css_file/design2.css">
+        <link href="css_file/progression.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+        <div id="center">
+                <h1><ruby>登録<rt>とうろく</rt></ruby></h1>
+
+                <form method="post" name="form1" action="user_add_check.php">
+
+                        <div class="cp_iptxt">
+                                <input class="ef" data-progression="" data-helper="名前を入れてね！" type="text" id="name"
+                                        name="name" value="" placeholder="">
+                                <label>担当する生徒の名前:</label>
+                                <span class="focus_line"></span>
+                        </div>
+                        
+                        <label>
+                                <input type="hidden" id="teach" name="teach" value="yes">
+                        </label>
+                        <script>
+                                /*
+                                function teachcheck() {
+                                        var check = document.getElementById("teach");
+                                        check.value = 'yes';
+                                }
+                                */
+
+                        </script>
+                        <div class="cp_iptxt">
+                                <input class="ef" data-progression="" data-helper="パスワードを入れてね！" type="text" id="name"
+                                        name="pass" value="" placeholder="">
+                                <label>パスワード:</label>
+                                <span class="focus_line"></span>
+                        </div>
+
+                        <div class="cp_iptxt">
+                                <input class="ef" data-progression="" data-helper="パスワード確認！" type="text" id="name"
+                                        name="pass2" value="" placeholder="">
+                                <label>パスワード確認 :</label>
+                                <span class="focus_line"></span>
+                        </div>
+
+                        <input type="button" onclick=location.assign("../../home_teacher.html") value="戻る"
+                                class="btn-gradient-3d-simple2">
+                        <input type="submit" value="ＯＫ" class="btn-gradient-3d-simple">
+                </form>
+
+</body>
+
+</html>

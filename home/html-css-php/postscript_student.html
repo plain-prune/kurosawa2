@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>自分メータ</title>
+        <link rel="stylesheet" href="css_file/design2.css">
+        <link href="css_file/progression.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+        <div id="center">
+                <h1>その<ruby>他<rt>た</rt>の</ruby><ruby>登録<rt>とうろく</rt></ruby></h1>
+
+                <form method="post" name="form1" action="postscript_check_student.php">
+
+                        <div class="cp_ipselect">
+                                <select data-progression="" class="cp_sl06" required id="grade" data-helper="学年を選択してくさだい" name="grade" value="">
+                                        <option value="" hidden disabled selected></option>
+                                        <option value="小学校1年生">小学校1年生</option>
+                                        <option value="小学校2年生">小学校2年生</option>
+                                        <option value="小学校3年生">小学校3年生</option>
+                                        <option value="小学校4年生">小学校4年生</option>
+                                        <option value="小学校5年生">小学校5年生</option>
+                                        <option value="小学校6年生">小学校6年生</option>
+                                        <option value="中学校1年生">中学校1年生</option>
+                                        <option value="中学校2年生">中学校2年生</option>
+                                        <option value="中学校3年生">中学校3年生</option>
+                                </select>
+                                <span class="cp_sl06_highlight"></span>
+                                <span class="cp_sl06_selectbar"></span>
+                                <label class="cp_sl06_selectlabel">がくねん</label>
+						</div>
+
+           				<div class="cp_ipselect">
+           	                    <select data-progression="" class="cp_sl06" required id="gender" data-helper="性別を選択してください" name="gender" value="">
+                                        <option value="" hidden disabled selected></option>
+                                        <option value="男">男の子</option>
+                                        <option value="女">女の子</option>
+                                        <option value="その他">そのほか</option>
+                                </select>
+                                <span class="cp_sl06_highlight"></span>
+                                <span class="cp_sl06_selectbar"></span>
+                                <label class="cp_sl06_selectlabel">せいべつ</label>
+                        </div>
+			
+                       			<label>
+                         		       <input type="hidden" id="teach" name="teach" value="no">
+                       			</label>
+                      			<input type="button" onclick=location.assign("../home_teacher.php") value="戻る"class="btn-gradient-3d-simple2">
+                        		<input type="submit" value="ＯＫ"  class="btn-gradient-3d-simple">
+                </form>
+
+</body>
+
+</html>
