@@ -1,0 +1,369 @@
+﻿/* 入力フォームのデザイン変更　*/
+/*学年選択*/
+.cp_ipselect {
+	position: relative;
+	width: 80%;
+	margin: 40px 3%;
+	text-align: center;
+}
+
+.cp_sl06 {
+	position: relative;
+	font-family: inherit;
+	background-color: transparent;
+	width: 100%;
+	padding: 10px 10px 10px 0;
+	font-size: 18px;
+	border-radius: 0;
+	border: none;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.cp_sl06:focus {
+	outline: none;
+	border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+.cp_ipselect .cp_sl06 {
+	appearance: none;
+	-webkit-appearance: none
+}
+
+.cp_ipselect select::-ms-expand {
+	display: none;
+}
+
+.cp_ipselect:after {
+	position: absolute;
+	top: 18px;
+	right: 10px;
+	width: 0;
+	height: 0;
+	padding: 0;
+	content: '';
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid rgba(0, 0, 0, 0.3);
+	pointer-events: none;
+}
+
+.cp_sl06_selectlabel {
+	color: #aaaaaa;
+	font-size: 18px;
+	font-weight: normal;
+	position: absolute;
+	pointer-events: none;
+	left: 0;
+	top: 10px;
+	transition: 0.2s ease all;
+}
+
+.cp_sl06:focus~.cp_sl06_selectlabel,
+.cp_sl06:valid~.cp_sl06_selectlabel {
+	color: #da3c41;
+	top: -20px;
+	transition: 0.2s ease all;
+	font-size: 14px;
+}
+
+.cp_sl06_selectbar {
+	position: relative;
+	display: block;
+	width: 100%;
+}
+
+.cp_sl06_selectbar:before,
+.cp_sl06_selectbar:after {
+	content: '';
+	height: 2px;
+	width: 0;
+	bottom: 1px;
+	position: absolute;
+	background: #da3c41;
+	transition: 0.2s ease all;
+}
+
+.cp_sl06_selectbar:before {
+	left: 50%;
+}
+
+.cp_sl06_selectbar:after {
+	right: 50%;
+}
+
+.cp_sl06:focus~.cp_sl06_selectbar:before,
+.cp_sl06:focus~.cp_sl06_selectbar:after {
+	width: 50%;
+}
+
+.cp_sl06_highlight {
+	position: absolute;
+	top: 25%;
+	left: 0;
+	pointer-events: none;
+	opacity: 0.5;
+}
+
+.cp_iptxt {
+	position: relative;
+	width: 80%;
+	margin: 40px 3%;
+}
+
+.cp_iptxt input[type='text'] {
+	font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	letter-spacing: 1px;
+	padding-left: 4em;
+}
+
+.cp_iptxt input[type='text']:focus {
+	outline: none;
+}
+
+.cp_iptxt input[type='date'] {
+	font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	letter-spacing: 1px;
+	padding-left: 4em;
+}
+
+.cp_iptxt input[type='date']:focus {
+	outline: none;
+}
+
+.ef {
+	padding: 4px 0;
+	border: 0;
+	border-bottom: 1px solid #1b2538;
+	background-color: transparent;
+}
+
+.ef~.focus_line {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 2px;
+	transition: 0.4s;
+	background-color: #da3c41;
+}
+
+.ef:focus~.focus_line,
+.cp_iptxt.ef~.focus_line {
+	width: 100%;
+	transition: 0.4s;
+}
+
+.ef~label {
+	position: absolute;
+	z-index: -1;
+	top: 4px;
+	left: 0;
+	width: 100%;
+	transition: 0.3s;
+	letter-spacing: 0.5px;
+	color: #aaaaaa;
+}
+
+.ef:focus~label,
+.cp_iptxt.ef~label {
+	font-size: 12px;
+	top: -16px;
+	transition: 0.3s;
+	color: #da3c41;
+}
+
+/*タイトルです*/
+h1 {
+	color: #364e96;
+	/*文字色*/
+	padding: 0.5em 0;
+	/*上下の余白*/
+	border-top: solid 3px #364e96;
+	/*上線*/
+	border-bottom: solid 3px #364e96;
+	/*下線*/
+
+}
+
+/*タイトルの位置指定*/
+h1 {
+	text-align: center;
+}
+
+/*保存するボタンと次へボタン*/
+.btn-gradient-3d-simple {
+	display: inline-block;
+	float: right;
+	padding: 0.5em 1em;
+	text-decoration: none;
+	border-radius: 4px;
+	color: #ffffff;
+	background-image: linear-gradient(#6795fd 0%, #67ceff 100%);
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+	border-bottom: solid 3px #5e7fca;
+}
+
+.btn-gradient-3d-simple:active {
+	-webkit-transform: translateY(4px);
+	transform: translateY(4px);
+	box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+	border-bottom: none;
+}
+
+.btn-gradient-3d-simple2 {
+	display: inline-block;
+	float: right;
+	padding: 0.5em 1em;
+	text-decoration: none;
+	border-radius: 4px;
+	color: #ffffff;
+	background-image: linear-gradient(#6795fd 0%, #67ceff 100%);
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+	border-bottom: solid 3px #5e7fca;
+}
+
+.btn-gradient-3d-simple2:active {
+	-webkit-transform: translateY(4px);
+	transform: translateY(4px);
+	box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+	border-bottom: none;
+}
+
+input[type="submit"][disabled] {
+	display: inline-block;
+	float: right;
+	padding: 0.5em 1em;
+	text-decoration: none;
+	border-radius: 4px;
+	color: #ffffff;
+	background-image: linear-gradient(#DCDCDC 0%, #DCDCDC 100%);
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+	border-bottom: solid 3px #DCDCDC;
+}
+
+/*フォントの指定です*/
+body {
+	font-family: "HG創英角ﾎﾟｯﾌﾟ体";
+	text-align: left;
+}
+
+button,
+input,
+select,
+textarea {
+	font-family: "HG創英角ﾎﾟｯﾌﾟ体";
+	font-size: 100%;
+        font-weight: bold;
+}
+
+/*サイトを強制的に中心に揃えるやつです（たぶん）*/
+div#center {
+	width: 600px;
+	height: 400px;
+	margin: auto;
+}
+
+/*チェックボックスの装飾系です*/
+
+.cp_ipcheck {
+	width: 120px;
+	margin-right: 90px;
+	text-align: left;
+}
+
+@keyframes click-wave {
+	0% {
+		position: relative;
+		width: 30px;
+		height: 30px;
+		opacity: 0.35;
+	}
+
+	100% {
+		width: 200px;
+		height: 200px;
+		margin-top: -80px;
+		margin-left: -80px;
+		opacity: 0;
+	}
+}
+
+.cp_ipcheck .option-input02 {
+	position: relative;
+	top: 13.33333px;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 30px;
+	height: 30px;
+	margin-right: 0.5rem;
+	cursor: pointer;
+	transition: all 0.15s ease-out 0s;
+	color: #ffffff;
+	border: none;
+	outline: none;
+	background: #d7cbcb;
+	-webkit-appearance: none;
+	appearance: none;
+}
+
+.cp_ipcheck .option-input02:hover {
+	background: #d6a9a9;
+}
+
+.cp_ipcheck .option-input02:checked {
+	background: #da3c41;
+}
+
+.cp_ipcheck .option-input02:checked::before {
+	font-size: 20px;
+	line-height: 30px;
+	position: absolute;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	content: 'OK';
+	text-align: center;
+}
+
+.cp_ipcheck .option-input02:checked::after {
+	position: relative;
+	display: block;
+	content: '';
+	-webkit-animation: click-wave 0.65s;
+	animation: click-wave 0.65s;
+	background: #da3c41;
+}
+
+.cp_ipcheck .option-input02.radio {
+	border-radius: 50%;
+}
+
+.cp_ipcheck .option-input02.radio::after {
+	border-radius: 50%;
+}
+
+.cp_ipcheck label {
+	line-height: 20px;
+	display: block;
+}
+
+.cp_ipcheck .option-input02:disabled {
+	cursor: not-allowed;
+	background: #b8b7b7;
+}
+
+.cp_ipcheck .option-input02:disabled::before {
+	font-size: 20px;
+	line-height: 30px;
+	position: absolute;
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	content: 'NG';
+	text-align: center;
+}

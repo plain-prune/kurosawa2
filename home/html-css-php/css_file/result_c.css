@@ -1,0 +1,227 @@
+﻿@charset "UTF-8";
+
+.cp_hr06 {
+  position: relative;
+  height: 1px;
+  border-width: 0;
+  background-image: -webkit-linear-gradient(left,
+      transparent 0%, #283593 50%, transparent 100%);
+  background-image: linear-gradient(90deg,
+      transparent 0%, #283593 50%, transparent 100%);
+}
+
+h1 {
+  color: #364e96;
+  /*文字色*/
+  padding: 0.5em 0;
+  /*上下の余白*/
+  border-top: solid 3px #364e96;
+  /*上線*/
+  border-bottom: solid 3px #364e96;
+  /*下線*/
+
+}
+
+body {
+  font-family: "HG創英角ﾎﾟｯﾌﾟ体";
+  text-align: center;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: "HG創英角ﾎﾟｯﾌﾟ体";
+  font-size: 100%;
+  font-weight: bold;
+}
+
+div#center {
+  width: 1200px;
+  height: 800px;
+  text-align: left;
+  background: #ffffff;
+  margin: auto;
+  
+}
+
+
+h1 {
+  text-align: center;
+}
+
+p.date {
+  text-align: right;
+}
+
+
+.btn-gradient-3d-simple {
+  display: inline-block;
+  float: right;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border-radius: 4px;
+  color: #ffffff;
+  background-image: linear-gradient(#6795fd 0%, #67ceff 100%);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  border-bottom: solid 3px #5e7fca;
+}
+
+.btn-gradient-3d-simple:active {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+  border-bottom: none;
+}
+
+.btn-gradient-3d-simple2 {
+  display: inline-block;
+  float: left;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border-radius: 4px;
+  color: #ffffff;
+  background-image: linear-gradient(#6795fd 0%, #67ceff 100%);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  border-bottom: solid 3px #5e7fca;
+}
+
+.btn-gradient-3d-simple2:active {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+  border-bottom: none;
+}
+
+.btn-gradient-3d-orange {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border-radius: 4px;
+  color: #ffffff;
+  background-image: linear-gradient(45deg, #33CC66 0%, #00CC00 100%);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  border-bottom: solid 3px #00CC00;
+}
+
+.btn-gradient-3d-orange:active {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+  border-bottom: none;
+}
+
+.kokuban-t2 {
+  display: table-cell;
+  /* ブロックレベル要素をtd(th)と同じように表示にする */
+  border: 1px solid #666;
+  position: relative;
+  float: right;
+  margin: 2em auto;
+  padding: 3.2em 1em 1em;
+  width: 55%;
+  /* ボックス幅 */
+  background-color: #006633;
+  /* ボックス背景色 */
+  color: #fff;
+  /* 文章色 */
+  border: 8px solid #b2771f;
+  /* 枠線 */
+  border-radius: 3px;
+  /* 角の丸み */
+  box-shadow: 0 0 5px #333, 0 0 5px #555 inset;
+
+}
+
+.kokuban-t2::before,
+.kokuban-t2::after {
+  position: absolute;
+  content: '';
+  bottom: 0;
+}
+
+.kokuban-t2::before {
+  right: 10px;
+  border: solid 3px #fff;
+  /*チョーク（白）*/
+  width: 20px;
+  border-radius: 3px 2px 0 2px;
+}
+
+.kokuban-t2::after {
+  right: 40px;
+  border: solid 3px #ffff6b;
+  /*チョーク（黄色）*/
+  width: 15px;
+  border-radius: 8px 5px 2px 5px;
+}
+
+.title-t2 {
+  position: absolute;
+  left: 1em;
+  top: .5em;
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #ffff6b;
+  /* タイトル色 */
+}
+
+
+
+
+table {
+  border-collapse: separate;
+  border-spacing: 5px;
+  width: 40%;
+  float: left;
+}
+
+table th,
+table td {
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+table th {
+  background-color: #1e90ff;
+  color: white;
+  border: solid 1px #1e90ff;
+}
+
+table td {
+  background-color: #e6e6fa;
+  border: solid 1px #f8f8ff;
+}
+
+/*以下追加*/
+span.memo {
+  color: #ffff6b;
+  /* タイトル色 */
+}
+
+table#memo_table{
+  border-collapse: collapse;
+  border-spacing: 5px;
+  width: 100%;
+  float: left;
+}
+
+table#memo_table th,
+table#memo_table td{
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+  border: solid 2px white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+table#memo_table th {
+  
+}
+
+table#memo_table td {
+  text-align: left;
+  width: 50%;
+}

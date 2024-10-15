@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+.cp_hr06 {
+  position: relative;
+  height: 1px;
+  border-width: 0;
+  background-image: -webkit-linear-gradient(left,
+      transparent 0%, #283593 50%, transparent 100%);
+  background-image: linear-gradient(90deg,
+      transparent 0%, #283593 50%, transparent 100%);
+}
+
+body {
+  font-family: "HG創英角ﾎﾟｯﾌﾟ体";
+  text-align: center;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: "HG創英角ﾎﾟｯﾌﾟ体";
+  font-size: 100%;
+}
+
+div#center {
+  width: 1200px;
+  height: 800px;
+  text-align: left;
+  background: #ffffff;
+  margin: auto;
+}
+
+.btn-gradient-3d-orange {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border-radius: 4px;
+  color: #ffffff;
+  background-image: linear-gradient(45deg, #33CC66 0%, #00CC00 100%);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  border-bottom: solid 3px #00CC00;
+}
+
+.btn-gradient-3d-orange:active {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+  border-bottom: none;
+}

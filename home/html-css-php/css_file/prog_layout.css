@@ -1,0 +1,337 @@
+﻿/* 入力フォームのデザイン変更　*/
+/*タイトルです*/
+h1 {
+  color: #364e96;
+  /*文字色*/
+  padding: 0.5em 0;
+  /*上下の余白*/
+  border-top: solid 3px #364e96;
+  /*上線*/
+  border-bottom: solid 3px #364e96;
+  /*下線*/
+
+}
+
+/*タイトルの位置指定*/
+h1 {
+  text-align: center;
+}
+
+
+/*フォントの指定です*/
+body {
+  font-family: "HG創英角ﾎﾟｯﾌﾟ体";
+  text-align: center;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: "HG創英角ﾎﾟｯﾌﾟ体";
+  font-size: 100%;
+  font-weight: bold;
+}
+
+/*サイトを強制的に中心に揃えるやつです（たぶん）*/
+div#center {
+  width: 800px;
+  height: 400px;
+  margin: auto;
+}
+
+.btn-gradient-3d-simple2 {
+  display: inline-block;
+  float: center;
+  width: 150px;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border-radius: 4px;
+  color: #ffffff;
+  background-image: linear-gradient(#6795fd 0%, #67ceff 100%);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  border-bottom: solid 3px #5e7fca;
+}
+
+.btn-gradient-3d-simple2:active {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+  border-bottom: none;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 5px;
+  width: 100%;
+}
+
+table th,
+table td {
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+table th {
+  background-color: #1e90ff;
+  color: white;
+  border: solid 1px #1e90ff;
+}
+
+table td {
+  background-color: #e6e6fa;
+  border: solid 1px #f8f8ff;
+}
+
+.white {
+  background-Color: #ffffff;
+  color: black;
+  border: solid 1px #000000;
+}
+
+.h1white {
+  color: #000000;
+  /*文字色*/
+  padding: 0.5em 0;
+  /*上下の余白*/
+  border-top: solid 3px #000000;
+  /*上線*/
+  border-bottom: solid 3px #000000;
+  /*下線*/
+}
+
+.black {
+  background-Color: #696969;
+  color: white;
+  border: solid 1px #696969;
+}
+
+.h1black {
+  color: #000000;
+  /*文字色*/
+  padding: 0.5em 0;
+  /*上下の余白*/
+  border-top: solid 3px #000000;
+  /*上線*/
+  border-bottom: solid 3px #000000;
+  /*下線*/
+}
+
+.red {
+  background-Color: #ff6347;
+  color: white;
+  border: solid 1px #ff6347;
+}
+
+.h1red {
+  color: #963636;
+  /*文字色*/
+  padding: 0.5em 0;
+  /*上下の余白*/
+  border-top: solid 3px #963636;
+  /*上線*/
+  border-bottom: solid 3px #963636;
+  /*下線*/
+}
+
+.green {
+  background-Color: #32cd32;
+  color: white;
+  border: solid 1px #32cd32;
+}
+
+.h1green {
+  color: #3e9636;
+  /*文字色*/
+  padding: 0.5em 0;
+  /*上下の余白*/
+  border-top: solid 3px #3e9636;
+  /*上線*/
+  border-bottom: solid 3px #3e9636;
+  /*下線*/
+}
+
+.blue {
+  background-Color: #1e90ff;
+  color: white;
+  border: solid 1px #1e90ff;
+}
+
+.h1blue {
+  color: #364e96;
+  /*文字色*/
+  padding: 0.5em 0;
+  /*上下の余白*/
+  border-top: solid 3px #364e96;
+  /*上線*/
+  border-bottom: solid 3px #364e96;
+  /*下線*/
+}
+
+
+.td_white {
+  background-color: #ffffff;
+  border: solid 1px #000000;
+}
+
+.btn_white {
+  display: inline-block;
+  float: left;
+  padding: 0.5em 1em;
+  margin: 0 2;
+  text-decoration: none;
+  border-radius: 4px;
+  color: #ffffff;
+  background-image: linear-gradient(#eeeeee 0%, #ababab 100%);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  border-bottom: solid 3px #ffffff;
+}
+.btn2_white {
+  display: inline-block;
+  float: right;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border-radius: 4px;
+  color: #ffffff;
+  background-image: linear-gradient(#ffffff 0%, #ababab 100%);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  border-bottom: solid 3px #ffffff;
+}
+
+.td_black {
+  color:#ffffff;
+  background-color: #000000;
+  border: solid 1px #ffffff;
+}
+
+.btn_black {
+  display: inline-block;
+  float: left;
+  padding: 0.5em 1em;
+  margin: 0 2;
+  text-decoration: none;
+  border-radius: 4px;
+  color: #ffffff;
+  background-image: linear-gradient(#000000 0%, #636363 100%);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  border-bottom: solid 3px #5e7fca;
+}
+.btn2_black {
+  display: inline-block;
+  float: right;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border-radius: 4px;
+  color: #ffffff;
+  background-image: linear-gradient(#6795fd 0%, #67ceff 100%);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  border-bottom: solid 3px #5e7fca;
+}
+
+.td_red {
+  background-color: #ffc5c5;
+  border: solid 1px #ffe1e1;
+}
+
+.btn_red {
+  display: inline-block;
+  float: left;
+  padding: 0.5em 1em;
+  margin: 0 2;
+  text-decoration: none;
+  border-radius: 4px;
+  color: #ffffff;
+  background-image: linear-gradient(#fd6767 0%, #ff6767 100%);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  border-bottom: solid 3px #5e7fca;
+}
+.btn2_red{
+  display: inline-block;
+  float: right;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border-radius: 4px;
+  color: #ffffff;
+  background-image: linear-gradient(#6795fd 0%, #67ceff 100%);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  border-bottom: solid 3px #5e7fca;
+}
+
+.td_green {
+  background-color: #acffb5;
+  border: solid 1px #d8ffda;
+}
+
+.btn_green {
+  display: inline-block;
+  float: left;
+  padding: 0.5em 1em;
+  margin: 0 2;
+  text-decoration: none;
+  border-radius: 4px;
+  color: #ffffff;
+  background-image: linear-gradient(#6cfd67 0%, #71ff67 100%);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  border-bottom: solid 3px #5e7fca;
+}
+.btn2_green {
+  display: inline-block;
+  float: right;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border-radius: 4px;
+  color: #ffffff;
+  background-image: linear-gradient(#6795fd 0%, #67ceff 100%);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  border-bottom: solid 3px #5e7fca;
+}
+
+.td_blue {
+  background-color:#b9d6ff;
+  border: solid 1px #ffffff;
+}
+
+.btn_blue {
+  display: inline-block;
+  float: left;
+  padding: 0.5em 1em;
+  margin: 0 2;
+  text-decoration: none;
+  border-radius: 4px;
+  color: #ffffff;
+  background-image: linear-gradient(#6795fd 0%, #67ceff 100%);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  border-bottom: solid 3px #5e7fca;
+}
+.btn2_blue {
+  display: inline-block;
+  float: right;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border-radius: 4px;
+  color: #ffffff;
+  background-image: linear-gradient(#6795fd 0%, #67ceff 100%);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  border-bottom: solid 3px #5e7fca;
+}
+
+
+
+.btn-gradient-3d-orange {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border-radius: 4px;
+  color: #ffffff;
+  background-image: linear-gradient(45deg, #33CC66 0%, #00CC00 100%);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  border-bottom: solid 3px #00CC00;
+}
+
+.btn-gradient-3d-orange:active {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+  border-bottom: none;
+}
