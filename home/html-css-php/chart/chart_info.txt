@@ -1,0 +1,21 @@
+ 「home_teacher.php」の「比較機能」のボタンから移動できるページです。
+入学時の生徒のデータ、卒業時の生徒のデータ、入学時の教師のデータ、卒業時の教師のデータの４つを選択して
+レーダーチャートを作成します。
+　新規登録時のチェックボックス（教師）から教師かどうかのフラグ｢kyoushiflag｣を設定して、
+生徒のデータを選択する画面では教師フラグのないデータ(kyoushiflag=0)のみが表示され、教師のデータを選択する画面では
+教師フラグのあるデータ(kyoushiflag=1)のみが表示されます。
+　
+・ページの遷移
+「student1data.php」→「student1data_choice.php」→「student2data.php」→「student2data_choice.php」
+
+→「teacher1data.php」→「teacher1data_choice.php」→「teacher2data.php」→「teacher2data_choice.php」
+
+→「radar2x2_chart.php」⇔「radar2x2_chart2.php」
+
+「db_input.php」はデータベースへの接続を行うものです。
+「radar2x2_chart.php」は生徒と教師のデータを比較したレーダーチャートを入学時と卒業時の２つに分けて表示しています。
+「radar2x2_chart2.php」は入学時と卒業時のデータを比較したレーダーチャートを生徒と教師の２つに分けて表示しています。
+この二つのチャートのページは画面下の表示切替えボタンで互いに遷移できます。
+
+
+最終更新 2022/10/20
